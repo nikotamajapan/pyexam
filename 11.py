@@ -11,13 +11,6 @@
 import random
 
 aa = random.randint(0, 2)
-if aa == 0:
-    print('0:グー')
-if aa == 1:
-    print('1:チョキ')
-if aa == 2:
-    print('2:パー')
-    
 bb=int(input('あなたは？(0:グー, 1:チョキ, 2:パー)> '))
 print(bb)
 
@@ -44,4 +37,12 @@ if aa == 2:
         print('lose')
     else:
         print('win')
+
+print('PC は')    
+if aa == 0:
+    print('0:グー')
+if aa == 1:
+    print('1:チョキ')
+if aa == 2:
+    print('2:パー')
 
