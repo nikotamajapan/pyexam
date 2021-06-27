@@ -11,6 +11,18 @@
 # 5月: 返済額 20000 円 残り 3610 円
 # 6月: 返済額 3652 円 これで完済。 返済総額:  103652 円
 # ...
-kari = 10000
-nenri = 14.0
-hensai = 20000
+
+kari = int(input('kari - '))
+ri = int(input('ri - '))
+hen = int(input('hen - '))
+total = 0
+month = 0
+while kari > hen :
+    month +=1
+    kari = kari*(1+ri/12/100)-hen
+    print(str(month)+'month:hen -',hen,'yen -','nokori-',int(kari), sep='')
+    total += hen
+month+=1
+kari = kari*(1+ri/12/100)
+total +=kari
+print(str(month)+'month:hen -',int(kari),'yen -',' owari ','hen total:',int(total),'yen',sep='')
