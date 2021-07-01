@@ -238,6 +238,7 @@ http: // yay.cla.kobe - u.ac.jp / ~jm / edu / 2016 / PB / python3 / python3ex01.
 #     print(str(year)+'年はうるう年です。')
 # else :
 #     print(str(year)+'年はうるう年ではありません。')
+
 # 練習10 あなたの誕生日は何曜日？ (ex10.py)
 # 　Zëllerの公式(1887)という公式を使うと、1582年10月15日以降の日付から曜日を計算することができます。整数(int)として年をyear、月をmonth、日をdayとした時、曜日(weekday)は
 #  weekday = (year + (year // 4) - (year // 100) + (year // 400) + ((13*month+8) // 5) + day) % 7
@@ -306,6 +307,7 @@ http: // yay.cla.kobe - u.ac.jp / ~jm / edu / 2016 / PB / python3 / python3ex01.
 # elif weekday == 6 :
 #     weekstr = '土曜日'
 # print(datestr+'は'+weekstr+'です。')
+
 # 練習11 ジャンケンするプログラム (ex11.py)
 # 　計算機とジャンケンをするプログラムを書きましょう。グー、チョキ、パーをそれぞれ0,1,2の整数で表すとします。あなたの出す手を整数で入力し、勝負するようにします。コンピュータの出す手は乱数（同じ確率ででたらめに数を自動的に生成する仕組み）を使って作り出します。具体的には、random.randint(最小値, 最大値)という式を使うと自動的に最小値から最大値までのでたらめな整数を作ってくれます。(プログラムの始めに、'import random'の宣言が必要)
 #  comp=random.randint(0,2)
@@ -394,6 +396,7 @@ http: // yay.cla.kobe - u.ac.jp / ~jm / edu / 2016 / PB / python3 / python3ex01.
 #         yourstr = 'あなたもパー。'
 #         result = 'あいこです。'
 # print(compstr+yourstr+result)
+
 # 練習12 数の比較 (ex12.py)
 # 　３つの数を入力し、数を昇順に並べ替えてから出力するプログラムを作成してください。
 # 実行結果
